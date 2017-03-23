@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>创建账户</h2>
+@using (Html.BeginForm("Add", "Log"))
+{
+@Html.Label("用户名")
+@Html.TextBox("strUsername")
+@Html.Label("密码")
+@Html.Password("strPassword")
+@Html.Label("确认密码")
+@Html.Password("strConfirmPassword")
+<br/>
+<input type="submit" value="提交" />
+    @*@Html.ActionLink("提交","Add")*@
+
+}
