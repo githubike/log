@@ -52,6 +52,6 @@ d:\documents\visual studio 2015\Projects\log\log\bin\zh-Hans\System.Web.Webpages
 d:\documents\visual studio 2015\Projects\log\log\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
 d:\documents\visual studio 2015\Projects\log\log\bin\zh-Hans\System.Web.Helpers.resources.dll
 d:\documents\visual studio 2015\Projects\log\log\bin\zh-Hans\System.Web.Mvc.resources.dll
-d:\documents\visual studio 2015\Projects\log\log\obj\Debug\log.csprojResolveAssemblyReference.cache
 d:\documents\visual studio 2015\Projects\log\log\obj\Debug\log.dll
 d:\documents\visual studio 2015\Projects\log\log\obj\Debug\log.pdb
+d:\documents\visual studio 2015\Projects\log\log\obj\Debug\log.csprojResolveAssemblyReference.cache

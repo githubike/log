@@ -9,6 +9,7 @@ namespace log.Service
     public class LogDbService
     {
         public logEntities1 db = new logEntities1();
+        int x=0;
         //注册用户
         public void AddUser(string strUsername, string strPassword)
         {
@@ -18,9 +19,19 @@ namespace log.Service
             db.user.Add(newUser);
             db.SaveChanges();
         }
-        public void ConfirmUser(string username,string password)
+        public int ConfirmUser(string username,string password)
         {
-            db.user.Where(a => a.username == username && a.password == password).FirstOrDefault();
+            //db.user.Where(a => a.username == username && a.password == password).FirstOrDefault();
+            foreach (user item in db.user)
+            {
+                if(item.username.Trim()==username&&item.password.Trim()==password)
+                {
+                    x = 1;
+                    break;
+                }
+            }
+            return (x);
+            
         }
     }
 }

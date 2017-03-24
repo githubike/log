@@ -36,15 +36,20 @@ namespace log.Controllers
             }
             else
             {
-                Response.Write("");
                 return View("Create");
             }
         }
         [HttpPost]
         public ActionResult Login(string username,string password)
         {
-
-            return View();
+            if (logdb.ConfirmUser(username, password) == 1)
+            {
+                return View("logsuccess");
+            }
+            else
+            {
+                return View("logfaild");
+            }
         }
     }
 }
